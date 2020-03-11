@@ -29,6 +29,19 @@ Just to implement trial on FireBase services
     
     3. Log In is straight Forward but when Signin Up make sure while setting up a password you use a strong password i.e 8 characters and above.
 # 2. FireBase UI Library
+ 1. Making the Story Short i would be using FirebaseUI docs https://firebase.google.com/docs/auth/android/firebaseui
+ 
+ 2. With the above Docs you would require to add dependencies on app level gradle depending on what you to implement for your users to use when signing Up i.e Twitter, Email, Facebook, Github etc inorder to use their sdks
+ eg : dependencies {
+ 
+     implementation 'com.firebaseui:firebase-ui-auth:6.2.0'
+ }
+ 
+ 3. In the Firebase console, open the Authentication section and enable the sign-in methods you want to support. Some sign-in methods require additional information, usually available in the service's developer console. eg :Google Sign In and also add your email as support email and save.
+ 
+ 4. If you support Google Sign-in and haven't yet specified your app's SHA-1 fingerprint, do so from the Settings page of the Firebase console. See Authenticating Your Client for details on how to get your app's SHA-1 fingerprint. 
+
+5. With all That Set you can follow down the code while copying and pasting .
 
 
 # 3. Linking Email and Password to RealTime Database
